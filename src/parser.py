@@ -1,6 +1,8 @@
 import fitz
 
+
 def extract_text(pdf_file):
+
     doc = fitz.open(
         stream=pdf_file.read(),
         filetype="pdf"
